@@ -5,3 +5,6 @@ api: 3.0.0ALPHA5
 author: LaFuma
 website: shop.networkgames.eu
 description: LobbyCore for SolarDinasty
+commands:
+ test:
+  description: "use command /test info for all information"
