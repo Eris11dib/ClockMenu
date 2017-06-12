@@ -62,3 +62,14 @@ class Main extends PluginBase implements Listener{
 	$player->addWindow($inventory);
 	}
 }
+    public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
+            if($sender instanceof Player){
+              switch(strtolower($cmd->getName())){
+                case "test":
+                      $sender->sendMessage("Added chest window!");
+                      $this->sendChestInventory($sender);
+                break;
+	      }
+	    }
+    }
+}
