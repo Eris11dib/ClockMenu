@@ -4,6 +4,9 @@ namespace LaFuma;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat as Color;
+use pocketmine\command\Command;
+use pocketmine\command\CommandSender;
+use pocketmine\command\ConsoleCommandSender;
 use pocketmine\Player;
 use pocketmine\Server;
 use pocketmine\item\Item;
