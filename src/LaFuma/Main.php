@@ -18,7 +18,6 @@ use pocketmine\nbt\tag\IntTag;
 use pocketmine\nbt\tag\ListTag;
 use pocketmine\nbt\tag\StringTag;
 use pocketmine\nbt\tags\IntArrayTag;
-use pocketmine\plugin\PluginBase;
 use pocketmine\tile\Chest;
 use pocketmine\tile\Tile;
 
