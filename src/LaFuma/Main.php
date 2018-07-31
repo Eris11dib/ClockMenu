@@ -12,6 +12,7 @@ use pocketmine\block\Block;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\event\player\PlayerDeathEvent;
 
 class Main extends PluginBase implements Listener{
 	
@@ -84,4 +85,13 @@ $player->teleport($this->getServer()->getLevelByName("KitPvP")->getSafeSpawn());
 $player->teleport($this->getServer()->getLevelByName("Prison")->getSafeSpawn());
         }
     }
+	public function onRespawn(PlayerDeathEvent $event){
+   
+   $player = $event->getPlayer();
+   $player->getInventory()->clearAll();
+   $item1 = Item::get(Item::COMPASS);
+   $item1->setCustomName($this->config->get("clock_name"));
+   $player->getInventory()->setItem(4, $item1);
+  
+ }
  }
